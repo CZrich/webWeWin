@@ -18,7 +18,7 @@ import { dataSourceOptions } from './data-source';
    
     // Aquí va la configuración de TypeORM correctamente
     TypeOrmModule.forRoot({ ...dataSourceOptions, autoLoadEntities: true }),
-    
+ 
     AuthModule,
     UsersModule, 
     ResiduosModule, 

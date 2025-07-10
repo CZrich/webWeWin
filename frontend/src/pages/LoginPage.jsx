@@ -18,7 +18,7 @@ export default function LoginForm() {
       const res = await loginUser(formData);
       const { access_token, role, email } = res.data;
       login(access_token, role, email);
-      navigate('/');
+      navigate('/cliente');
     } catch (err) {
       console.error(err.response?.data?.message || 'Error al iniciar sesión');
       alert('Error al iniciar sesión');
